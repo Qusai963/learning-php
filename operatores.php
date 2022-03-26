@@ -21,3 +21,10 @@ echo '<br>';
 // before php 8 the string value will convert to numeric ,
 // but in php 8 numeric value will convert to string
 
+$str = 'abc';
+echo ++$str.'<br>'; // abd
+
+// we said array 1 equal array 2 if equals (keys and value)
+$firstArray = ['a'=>1,'b'=>2];
+$secondArray = ['c'=>1,'d'=>2];
+var_dump($firstArray == $secondArray); //bool(false)
