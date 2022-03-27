@@ -28,3 +28,4 @@ echo ++$str.'<br>'; // abd
 $firstArray = ['a'=>1,'b'=>2];
 $secondArray = ['c'=>1,'d'=>2];
 var_dump($firstArray == $secondArray); //bool(false)
+
