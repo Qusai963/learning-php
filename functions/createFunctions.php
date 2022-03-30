@@ -17,3 +17,13 @@ function type():int|float{
 function nullfun(): ?int{
     return null; // still work because we put '?'
 }
+
+function prints(){
+    echo 'printing','<br>';
+}
+$rt = 'prints';
+if(is_callable())
+$rt();
+else
+    echo 'not found'.'<br>';
+

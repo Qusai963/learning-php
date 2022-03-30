@@ -88,3 +88,13 @@ echo $we;
 //unset function destroy the variable
 // $x = 7;  unsent($x); : here we can't access to x because it convert to null
 
+$xg = 5;
+function foo2(){
+    //$GLOBALS['xg'];
+    global $xg;
+    echo $xg.'<br>';
+    //$GLOBALS['xg'] = 10;
+    $xg = 10;
+}
+foo2();
+echo $xg.'<br>'; // 10
